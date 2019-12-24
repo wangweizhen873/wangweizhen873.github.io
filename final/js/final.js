@@ -180,6 +180,7 @@ $(() => {
         $('#in3').val("");
         $('#in4').val("");
         $('#output').val("");
+        $("#btni").attr("disabled", true);
     })
 
 })
