@@ -53,11 +53,13 @@ $(() => {
         $('#data').empty();
         answer()
         $('#btni').removeAttr('disabled')
-
-
+        $('#in1').removeAttr('disabled')
+        $('#in2').removeAttr('disabled')
+        $('#in3').removeAttr('disabled')
+        $('#in4').removeAttr('disabled')
     })
 
-    /*$('#in1').keypress(function(e) {
+    $('#in1').keypress(function(e) {
         if (e.which == 13) {
             $('#btni').focus().click();
         }
@@ -76,7 +78,7 @@ $(() => {
         if (e.which == 13) {
             $('#btni').focus().click();
         }
-    })*/
+    })
     $('#btni').on('click', () => {
         console.log('輸入')
         $('#output').empty();
@@ -181,6 +183,11 @@ $(() => {
         $('#in4').val("");
         $('#output').val("");
         $("#btni").attr("disabled", true);
+        $("#in1").attr("disabled", true);
+        $("#in2").attr("disabled", true);
+        $("#in3").attr("disabled", true);
+        $("#in4").attr("disabled", true);
+
     })
 
 })
