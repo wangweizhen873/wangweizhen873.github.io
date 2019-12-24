@@ -91,7 +91,6 @@ $(() => {
 
             //document.form1.elements[i].focus();
             //return false;
-        } else if (!($("#in1").val() != $("#in2").val() != $("#in3").val() != $("#in4").val() != $("#in1").val())) {
             alert("數字不能重複");
             wrong = true;
         } else {
