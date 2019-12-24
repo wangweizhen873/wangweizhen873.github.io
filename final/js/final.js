@@ -91,6 +91,7 @@ $(() => {
 
             //document.form1.elements[i].focus();
             //return false;
+        } else if (!($("#in1").val() !== $("#in2").val() && $("#in1").val() !== $("#in3").val() && $("#in1").val() !== $("#in4").val() && $("#in2").val() !== $("#in3").val() && $("#in2").val() !== $("#in4").val() && $("#in3").val() !== $("#in4").val())) {
             alert("數字不能重複");
             wrong = true;
         } else {
@@ -174,6 +175,11 @@ $(() => {
         console.log('重新')
         $("#btng").attr("disabled", false);
         $('#data').empty();
+        $('#in1').val("");
+        $('#in2').val("");
+        $('#in3').val("");
+        $('#in4').val("");
+        $('#output').val("");
     })
 
 })
