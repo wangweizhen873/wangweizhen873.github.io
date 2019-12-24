@@ -1,0 +1,20 @@
+.numclass {
+    width: 40px;
+}
+
+.poker {
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: #a4c400;
+    border-radius: 3px;
+    border-style: none;
+    font-size: larger;
+}
+
+#left {
+    width: 600px;
+    float: left;
+}

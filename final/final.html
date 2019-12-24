@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <title>1A2B猜數字</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/final.css">
+</head>
+
+<body style="font-family:'Noto Serif TC', serif ;">
+    <div class=" container">
+        <div style="font-size: 40px;margin-bottom: 55px;margin-top: 15px; ">1A2B猜數字</div>
+        <div style="font-size: 20PX;margin-bottom: 0PX; text-decoration:#DCE775 ;text-decoration-line:overline ;">遊戲規則說明：</div>
+        <div><br>step1&emsp;按下"產生數字 "鍵，由電腦產生一組4碼數字，並且各位號碼不會重複。<br>step2&emsp;接下來在下方四個空格中，依序填入4碼數的各位數字，並按下"輸入 "鍵交給電腦判斷答案是否正確。<br>step3&emsp;電腦判斷結果以AB表示->A表示其中有數字對且位置對的位數。/B則表示其中有數字對，卻未在正確位子上。&emsp;例如：答案是1234，而你猜1253，判斷結果就為2A1B</div>
+        <!--<div class="left ">-->
+        <div style="margin-top:50px;text-decoration:#DCE775 ;text-decoration-line:overline ;font-size: 30px;">Let's get started!</div>
+        <div style="padding-top: 30px; "><button id="btng" type="button">產生數字</button></div>
+        <div class='row' id="data" style="width: 300px;align-items: stretch;margin-top: 20px; ">
+        </div>
+        <div style='margin-top: 40px;margin-bottom: 10px;'>我猜的數字：</div>
+        <div class='row' style=" display:inline; " id="inputinput">
+            <input type="text " maxlength="1 " id="in1" min="0 " max="9 " oninput="value=value.replace(/[^\d]/g, '') " style="width: 70px;height:100px ;font-size: 35px;padding: 10px;text-align:center; ">
+            <input type="text " maxlength="1 " id="in2" min="0 " max="9 " oninput="value=value.replace(/[^\d]/g, '') " style="width: 70px;height:100px ;font-size: 35px;padding: 10px;text-align:center; ">
+            <input type="text " maxlength="1 " id="in3" min="0 " max="9 " oninput="value=value.replace(/[^\d]/g, '') " style="width: 70px;height:100px ;font-size: 35px;padding: 10px;text-align:center; ">
+            <input type="text " maxlength="1 " id="in4" min="0 " max="9 " oninput="value=value.replace(/[^\d]/g, '') " style="width: 70px;height:100px ;font-size: 35px;padding: 10px;text-align:center; ">
+        </div>
+        <div style=" display:inline ;margin-left: 30px; "><button id="btni" type="button " disabled>輸入</button></div>
+        <div style="display:inline-block;margin-left: 15px; "><input placeholder="判斷結果 " style=" background-color: rgb(238, 237, 232);width: 150px; " id="output" disabled="disabled " type="text "></input>
+        </div>
+        <div><button id="btna" type="button " style="margin-top: 30px;margin-bottom: 20px; ">解答</button></div>
+        <div><button id="btnr" type="button " style="margin-top: 30px;margin-bottom: 50px;background-color: #1B5E20;font-size: larger; ">再玩一次</button></div>
+        <!--</div>-->
+
+    </div>
+    <script src="./js/math.js "></script>
+    <script src="./js/final.js "></script>
+</body>
