@@ -14,13 +14,20 @@
     <link rel="stylesheet" href="./css/final.css">
 </head>
 
-<body style="font-family:'Noto Serif TC', serif ;">
+<body style="font-family:'Noto Serif TC', serif ;background-color: rgb(252, 234, 213);">
     <div class=" container">
         <div style="font-size: 40px;margin-bottom: 55px;margin-top: 15px; ">1A2B猜數字</div>
         <div style="font-size: 20PX;margin-bottom: 0PX; text-decoration:#DCE775 ;text-decoration-line:overline ;">遊戲規則說明：</div>
-        <div><br>step1&emsp;按下"產生數字 "鍵，由電腦產生一組4碼數字，並且各位號碼不會重複。<br>step2&emsp;接下來在下方四個空格中，依序填入4碼數的各位數字，並按下"輸入 "鍵交給電腦判斷答案是否正確。<br>step3&emsp;電腦判斷結果以AB表示->A表示其中有數字對且位置對的位數。/B則表示其中有數字對，卻未在正確位子上。&emsp;例如：答案是1234，而你猜1253，判斷結果就為2A1B</div>
+        <div><br>
+            <div><span style="color: white;border-color: white;border-style: solid;padding: 2px;">step1</span>&emsp;按下"產生數字 "鍵，由電腦產生一組4碼數字，並且各位號碼不會重複。</div>
+            <br>
+            <div><span style="color: white;border-color: white;border-style: solid;padding: 2px;">step2</span>&emsp;接下來在下方四個空格中，依序填入4碼數的各位數字，並按下"輸入 "鍵交給電腦判斷答案是否正確。</div>
+            <br>
+            <div><span style="color: white;border-color: white;border-style: solid;padding: 2px;">step3</span>&emsp;電腦判斷結果以AB表示->A表示其中有數字對且位置對的位數。/B則表示其中有數字對，卻未在正確位子上。<br>&emsp;&emsp;&emsp;&emsp;例如：答案是1234，而你猜1253，判斷結果就為2A1B</div>
+        </div>
+
         <div class="left ">
-            <div style="margin-top:50px;text-decoration:#DCE775 ;text-decoration-line:overline ;font-size: 30px;">Let's get started!</div>
+            <div style="margin-top:100px;text-decoration:#DCE775 ;text-decoration-line:overline ;font-size: 30px;">Let's get started!</div>
             <div style="padding-top: 30px; "><button id="btng" type="button">產生數字</button></div>
             <div class='row' id="data" style="width: 300px;align-items: stretch;margin-top: 20px; ">
             </div>
